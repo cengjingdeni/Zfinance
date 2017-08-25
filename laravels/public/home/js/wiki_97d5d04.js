@@ -1,0 +1,1 @@
+define("college:page/wiki/wiki.js",function(require,exports,module){"use strict";var wikiList=(require("common:widget/lib/jquery/jquery"),require("college:widget/column/wdg-wiki-list/wdg-wiki-list")),pagination=require("college:widget/column/wdg-pagination/wdg-pagination");module.exports={init:function(){wikiList(),pagination()}}});
