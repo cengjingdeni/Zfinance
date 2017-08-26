@@ -39,8 +39,13 @@
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('/home/css/base_41a7e4e_1.css')}}">
 
-
-
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <script language="javascript" src="{{URL::asset('/')}}home/js/jquery.base64.js"></script>  
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('/')}}home/css/base_41a7e4e_3.css">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('/')}}home/css/uplan_wdg_a3071e5.css">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('/')}}home/css/wiki_31cac8e.css">
+    <link rel="stylesheet" href="{{URL::asset('/')}}home/css/tasp.css" />
+    <link href="{{URL::asset('/')}}home/css/orderconfirm.css" rel="stylesheet" />
 
 
 
@@ -161,7 +166,7 @@
             <li class="channel-item ">
                 <a href="{{url('uplan/show')}}?classId=1">U计划</a>
             </li>
-            <li class="channel-item "><a href="{{url('uplan/uXuan')}}?classId=2">优选计划</a></li>
+            <li class="channel-item "><a href="{{url('kimen/kimen')}}">优选计划</a></li>
             <li class="channel-item "><a href="{{url('uplan/xin')}}?classId=2">薪计划</a></li>
             <li class="channel-item "><a href="/pc/loan.html">债权</a></li>
             <li class="channel-item ">
@@ -173,9 +178,10 @@
 
                 <div class="denglu">
                     @if(Session::get('tel')!="")
-                        <a href="/pc/user/account/p2p/index">我的账户</a>
+                        <a href="{{url('personCenter/realName')}}">我的账户</a>
                     @else
-                        <a target="_self" href="{{url('home/home')}}">注册</a> / <a target="_self" href="{{url('home/home')}}">登录</a>
+                        <a target="_self" href="{{url('home/home')}}">注册</a> 
+                        / <a target="_self" href="{{url('home/home')}}">登录</a>
 
                     @endif
                 </div>

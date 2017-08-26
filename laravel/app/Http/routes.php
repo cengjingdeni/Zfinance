@@ -50,7 +50,19 @@ Route::get('personCenter/show',['uses'=>'home\personCenterController@show']);
 //支付宝支付处理路由
 Route::get('alipay','home\alipayController@Alipay');  // 发起支付请求
 Route::any('notify','home\alipayController@AliPayNotify'); //服务器异步通知页面路径
-Route::any('    ','home\alipayController@AliPayReturn');  //页面跳转同步通知页面路径
+Route::any('return','home\alipayController@AliPayReturn');  //页面跳转同步通知页面路径
 
 
 Route::get('demo/show',['uses'=>'home\DemoController@show']);
+/*
+ *优选计划
+ */
+Route::get('kimen/kimen','home\KimenController@kimen');
+Route::get('kimen/mount','home\KimenController@mount');
+Route::get('kimen/dingdan','home\KimenController@dingdan');
+Route::get('kimen/coupon','home\KimenController@coupon');
+Route::get('kimen/teemo','home\KimenController@teemo');
+Route::get('kimen/order','home\KimenController@order');
+Route::get('kimen/norder','home\KimenController@norder');
+Route::get('kimen/listing','home\KimenController@listing');
+Route::get('kimen/nlisting','home\KimenController@nlisting');
